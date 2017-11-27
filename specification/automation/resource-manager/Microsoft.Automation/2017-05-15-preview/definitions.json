@@ -243,41 +243,36 @@
             "required": [ "operatingSystem" ]
         },
 
-        "WindowsUpdateClasses": {
-            "type": "string",
-            "description": "Enumeration of the values used to set the includedUpdateClassifications property",
-            "enum": [
-                "Unclassified",
-                "Critical",
-                "Security",
-                "UpdateRollup",
-                "FeaturePack",
-                "ServicePack",
-                "Definition",
-                "Tools",
-                "Updates"
-            ],
-            "x-ms-enum": {
-                "name": "WindowsUpdateClasses",
-                "modelAsString": true
-            }
-        },
-
         "WindowsProperties": {
             "type": "object",
             "description": "Windows specific update configuration.",
             "properties": {
                 "includedUpdateClassifications": {
                     "description": "Update classification included in the software update configuration. This is a bitfield where multiple values can be used",
-                    "type": "integer"
-            },
-            "excludedKbNumbers": {
-                "type": "array",
-                "description": "KB numbers excluded from the software update configuration.",
-                "items": {
-                "type": "string"
+                    "type": "integer",
+                    "enum": [
+                        "Unclassified",
+                        "Critical",
+                        "Security",
+                        "UpdateRollup",
+                        "FeaturePack",
+                        "ServicePack",
+                        "Definition",
+                        "Tools",
+                        "Updates"
+                    ],
+                    "x-ms-enum": {
+                        "name": "WindowsUpdateClasses",
+                        "modelAsString": true
+                    }
+                },
+                "excludedKbNumbers": {
+                    "type": "array",
+                    "description": "KB numbers excluded from the software update configuration.",
+                    "items": {
+                        "type": "string"
+                    }
                 }
-            }
             }
         },
 
