@@ -248,7 +248,7 @@
             "description": "Windows specific update configuration.",
             "properties": {
                 "includedUpdateClassifications": {
-                    "description": "Update classification included in the software update configuration.",
+                    "description": "Update classification included in the software update configuration. This is a bitfield where multiple values can be used",
                     "type": "integer",
                     "enum": [
                         "Unclassified",
@@ -263,7 +263,7 @@
                     ],
                     "x-ms-enum": {
                         "name": "WindowsUpdateClasses",
-                        "modelAsString": false
+                        "modelAsString": true
                     }
             },
             "excludedKbNumbers": {
