@@ -250,7 +250,7 @@
             "includedUpdateClassifications": {
                 "description": "Update classification included in the software update configuration.",
                 "items": {
-                "type": "string",
+                "type": "integer",
                 "enum": [
                     "Unclassified",
                     "Critical",
@@ -264,7 +264,7 @@
                 ],
                 "x-ms-enum": {
                     "name": "WindowsUpdateClasses",
-                    "modelAsString": true
+                    "modelAsString": false
                 }
                 }
             },
