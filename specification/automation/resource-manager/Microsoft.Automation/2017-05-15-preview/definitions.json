@@ -247,26 +247,24 @@
             "type": "object",
             "description": "Windows specific update configuration.",
             "properties": {
-            "includedUpdateClassifications": {
-                "description": "Update classification included in the software update configuration.",
-                "items": {
-                "type": "integer",
-                "enum": [
-                    "Unclassified",
-                    "Critical",
-                    "Security",
-                    "UpdateRollup",
-                    "FeaturePack",
-                    "ServicePack",
-                    "Definition",
-                    "Tools",
-                    "Updates"
-                ],
-                "x-ms-enum": {
-                    "name": "WindowsUpdateClasses",
-                    "modelAsString": false
-                }
-                }
+                "includedUpdateClassifications": {
+                    "description": "Update classification included in the software update configuration.",
+                    "type": "integer",
+                    "enum": [
+                        "Unclassified",
+                        "Critical",
+                        "Security",
+                        "UpdateRollup",
+                        "FeaturePack",
+                        "ServicePack",
+                        "Definition",
+                        "Tools",
+                        "Updates"
+                    ],
+                    "x-ms-enum": {
+                        "name": "WindowsUpdateClasses",
+                        "modelAsString": false
+                    }
             },
             "excludedKbNumbers": {
                 "type": "array",
