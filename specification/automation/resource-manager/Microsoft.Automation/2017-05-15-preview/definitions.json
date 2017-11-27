@@ -249,7 +249,7 @@
             "properties": {
                 "includedUpdateClassifications": {
                     "description": "Update classification included in the software update configuration. This is a bitfield where multiple values can be used",
-                    "type": "integer",
+                    "type": "string",
                     "enum": [
                         "Unclassified",
                         "Critical",
