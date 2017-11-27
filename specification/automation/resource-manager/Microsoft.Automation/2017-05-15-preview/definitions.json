@@ -66,28 +66,28 @@
             "x-ms-azure-resource": true,
             "description": "Software update configuration properties.",
             "type": "object",
-          "properties": {
-            "name": {
-              "readOnly": true,
-              "type": "string",
-              "description": "Resource name."
-            },
-            "id": {
-              "readOnly": true,
-              "type": "string",
-              "description": "Resource Id."
-            },
-            "type": {
-              "readOnly": true,
-              "type": "string",
-              "description": "Resource type"
-            },
             "properties": {
-              "x-ms-client-flatten": true,
-              "description": "Software update configuration properties.",
-              "$ref": "#/definitions/softwareUpdateConfigurationProperties"
-            }
-          },
+                "name": {
+                    "readOnly": true,
+                    "type": "string",
+                    "description": "Resource name."
+                },
+                "id": {
+                    "readOnly": true,
+                    "type": "string",
+                    "description": "Resource Id."
+                },
+                "type": {
+                    "readOnly": true,
+                    "type": "string",
+                    "description": "Resource type"
+                },
+                "properties": {
+                    "x-ms-client-flatten": true,
+                    "description": "Software update configuration properties.",
+                    "$ref": "#/definitions/softwareUpdateConfigurationProperties"
+                }
+            },
             "required": [ "properties" ]
         },
 
