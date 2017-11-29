@@ -204,7 +204,6 @@
         "updateConfiguration": {
             "type": "object",
             "description": "Update specifc properties of the software update configuration.",
-            "discriminator": "operatingSystem",
             "properties": {
                 "operatingSystem": {
                     "description": "operating system of target machines",
