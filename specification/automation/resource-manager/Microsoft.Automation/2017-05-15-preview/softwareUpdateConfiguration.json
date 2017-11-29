@@ -62,7 +62,11 @@
             "$ref": "./definitions.json#/parameters/automationAccountName"
           },
           {
-            "$ref": "./definitions.json#/parameters/softwareUpdateConfigurationName"
+            "name": "softwareUpdateConfigurationName",
+            "description": "The name of the software update configuration to be created.",
+            "type": "string",
+            "required": true,
+            "in": "path"
           },
           {
             "$ref": "./definitions.json#/parameters/apiVersion"

@@ -585,8 +585,7 @@
           "description": "The name of the automation account.",
           "type": "string",
           "required": true,
-          "in": "path",
-          "format": "uuid"
+          "in": "path"
         },
         "softwareUpdateConfigurationName": {
           "name": "softwareUpdateConfigurationName",
