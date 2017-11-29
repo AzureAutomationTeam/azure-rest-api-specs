@@ -281,19 +281,16 @@
             "properties": {
             "includedPackageClassifications": {
                 "description": "Update classifications included in the software update configuration.",
-                "type": "array",
-                "items": {
                 "type": "string",
                 "enum": [
                     "Unclassified",
                     "Critical",
                     "Security",
                     "Other"
-                ]
-                },
+                ],
                 "x-ms-enum": {
-                "name": "LinuxUpdateClasses",
-                "modelAsString": true
+                    "name": "LinuxUpdateClasses",
+                    "modelAsString": true
                 }
             },
             "excludedPackageNameMasks": {
