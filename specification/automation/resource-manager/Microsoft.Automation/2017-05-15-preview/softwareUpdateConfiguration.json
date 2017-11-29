@@ -53,15 +53,6 @@
         "operationId": "SoftwareUpdateConfigurations_Create",
         "parameters": [
           {
-            "$ref": "./definitions.json#/parameters/subscriptionId"
-          },
-          {
-            "$ref": "./definitions.json#/parameters/resourceGroupName"
-          },
-          {
-            "$ref": "./definitions.json#/parameters/automationAccountName"
-          },
-          {
             "name": "softwareUpdateConfigurationName",
             "description": "The name of the software update configuration to be created.",
             "type": "string",
