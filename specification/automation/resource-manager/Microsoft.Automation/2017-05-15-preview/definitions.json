@@ -262,7 +262,7 @@
                     ],
                     "x-ms-enum": {
                         "name": "WindowsUpdateClasses",
-                        "modelAsString": true
+                        "modelAsString": false
                     }
                 },
                 "excludedKbNumbers": {
