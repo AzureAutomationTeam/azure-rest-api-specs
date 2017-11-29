@@ -50,7 +50,7 @@
           "x-ms-examples": {
             "Get software update configuration machine run": { "$ref": "./examples/softwareUpdateConfigurationMachineRun/getSoftwareUpdateConfigurationMachineRunById.json" }
           },
-          "operationId": "softwareUpdateConfigurationMachineRuns_GetById",
+          "operationId": "SoftwareUpdateConfigurationMachineRuns_GetById",
           "parameters": [
             {
               "$ref": "./definitions.json#/parameters/subscriptionId"
@@ -62,7 +62,12 @@
               "$ref": "./definitions.json#/parameters/automationAccountName"
             },
             {
-              "$ref": "./definitions.json#/parameters/softwareUpdateConfigurationMachineRunId"
+              "name": "softwareUpdateConfigurationMachineRunId",
+              "description": "The Id of the software update configuration machine run.",
+              "type": "string",
+              "required": true,
+              "in": "path",
+              "format": "uuid"
             },
             {
               "$ref": "./definitions.json#/parameters/apiVersion"
@@ -97,7 +102,7 @@
             "List software update configuration machine runs": { "$ref": "./examples/softwareUpdateConfigurationMachineRun/listSoftwareUpdateConfigurationMachineRuns.json" },
             "List software update configuration machine runs for a specific software update configuration run": { "$ref": "./examples/softwareUpdateConfigurationMachineRun/listSoftwareUpdateConfigurationMachineRunsByRun.json" }
           },
-          "operationId": "softwareUpdateConfigurationMachineRuns_List",
+          "operationId": "SoftwareUpdateConfigurationMachineRuns_List",
           "parameters": [
             {
               "$ref": "./definitions.json#/parameters/subscriptionId"

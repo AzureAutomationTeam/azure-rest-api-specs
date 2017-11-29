@@ -586,29 +586,6 @@
           "required": true,
           "in": "path"
         },
-        "softwareUpdateConfigurationName": {
-          "name": "softwareUpdateConfigurationName",
-          "description": "The name of the software update configuration to be created.",
-          "type": "string",
-          "required": true,
-          "in": "path"
-        },
-        "softwareUpdateConfigurationRunId": {
-          "name": "softwareUpdateConfigurationRunId",
-          "description": "The Id of the software update configuration run.",
-          "type": "string",
-          "required": true,
-          "in": "path",
-          "format": "uuid"
-        },
-        "softwareUpdateConfigurationMachineRunId": {
-          "name": "softwareUpdateConfigurationMachineRunId",
-          "description": "The Id of the software update configuration machine run.",
-          "type": "string",
-          "required": true,
-          "in": "path",
-          "format": "uuid"
-        },
         "apiVersion": {
           "name": "api-version",
           "description": "The API version.",
