@@ -41,14 +41,6 @@
 
   "paths": {
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Automation/automationAccounts/{automationAccountName}/softwareUpdateConfigurations/{softwareUpdateConfigurationName}": {
-      "parameters":[
-        {
-          "$ref": "./definitions.json#/parameters/subscriptionId"
-        },
-        {
-          "$ref": "./definitions.json#/parameters/resourceGroupName"
-        }
-      ],
       "put": {
         "tags": [ "Software Update Configuration" ],
         "description": "Create a new software update configuration with the name given in the URI.",
@@ -61,6 +53,12 @@
         "operationId": "SoftwareUpdateConfigurations_Create",
         "parameters": [
           {
+            "$ref": "../2015-10-31/definitions.json#/parameters/SubscriptionIdParameter"
+          },
+          {
+            "$ref": "../2015-10-31/definitions.json#/parameters/ResourceGroupNameParameter"
+          },
+          {
             "name": "softwareUpdateConfigurationName",
             "description": "The name of the software update configuration to be created.",
             "type": "string",
@@ -68,7 +66,7 @@
             "in": "path"
           },
           {
-            "$ref": "./definitions.json#/parameters/apiVersion"
+            "$ref": "../2015-10-31/definitions.json#/parameters/ApiVersionParameter"
           },
           {
             "$ref": "./definitions.json#/parameters/clientRequestId"
@@ -121,10 +119,10 @@
         "operationId": "SoftwareUpdateConfigurations_GetByName",
         "parameters": [
           {
-            "$ref": "./definitions.json#/parameters/subscriptionId"
+            "$ref": "../2015-10-31/definitions.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "./definitions.json#/parameters/resourceGroupName"
+            "$ref": "../2015-10-31/definitions.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "./definitions.json#/parameters/automationAccountName"
@@ -137,7 +135,7 @@
             "in": "path"
           },
           {
-            "$ref": "./definitions.json#/parameters/apiVersion"
+            "$ref": "../2015-10-31/definitions.json#/parameters/ApiVersionParameter"
           },
           {
             "$ref": "./definitions.json#/parameters/clientRequestId"
@@ -168,10 +166,10 @@
         "operationId": "SoftwareUpdateConfigurations_Delete",
         "parameters": [
           {
-            "$ref": "./definitions.json#/parameters/subscriptionId"
+            "$ref": "../2015-10-31/definitions.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "./definitions.json#/parameters/resourceGroupName"
+            "$ref": "../2015-10-31/definitions.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "./definitions.json#/parameters/automationAccountName"
@@ -184,7 +182,7 @@
             "in": "path"
           },
           {
-            "$ref": "./definitions.json#/parameters/apiVersion"
+            "$ref": "../2015-10-31/definitions.json#/parameters/ApiVersionParameter"
           },
           {
             "$ref": "./definitions.json#/parameters/clientRequestId"
@@ -218,16 +216,16 @@
         "operationId": "SoftwareUpdateConfigurations_List",
         "parameters": [
           {
-            "$ref": "./definitions.json#/parameters/subscriptionId"
+            "$ref": "../2015-10-31/definitions.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "./definitions.json#/parameters/resourceGroupName"
+            "$ref": "../2015-10-31/definitions.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "./definitions.json#/parameters/automationAccountName"
           },
           {
-            "$ref": "./definitions.json#/parameters/apiVersion"
+            "$ref": "../2015-10-31/definitions.json#/parameters/ApiVersionParameter"
           },
           {
             "$ref": "./definitions.json#/parameters/clientRequestId"
