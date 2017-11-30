@@ -41,6 +41,14 @@
 
   "paths": {
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Automation/automationAccounts/{automationAccountName}/softwareUpdateConfigurations/{softwareUpdateConfigurationName}": {
+      "parameters":[
+        {
+          "$ref": "./definitions.json#/parameters/subscriptionId"
+        },
+        {
+          "$ref": "./definitions.json#/parameters/resourceGroupName"
+        }
+      ],
       "put": {
         "tags": [ "Software Update Configuration" ],
         "description": "Create a new software update configuration with the name given in the URI.",
