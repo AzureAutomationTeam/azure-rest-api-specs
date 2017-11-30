@@ -103,16 +103,16 @@
           "operationId": "SoftwareUpdateConfigurationRuns_List",
           "parameters": [
             {
-              "$ref": "#/parameters/subscriptionId"
+              "$ref": "../2015-10-31/definitions.json#/parameters/SubscriptionIdParameter"
             },
             {
-              "$ref": "#/parameters/resourceGroupName"
+              "$ref": "../2015-10-31/definitions.json#/parameters/ResourceGroupNameParameter"
             },
             {
               "$ref": "#/parameters/automationAccountName"
             },
             {
-              "$ref": "#/parameters/apiVersion"
+              "$ref": "../2015-10-31/definitions.json#/parameters/ApiVersionParameter"
             },
             {
               "$ref": "#/parameters/clientRequestId"
