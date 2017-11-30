@@ -53,10 +53,10 @@
           "operationId": "SoftwareUpdateConfigurationMachineRuns_GetById",
           "parameters": [
             {
-              "$ref": "./definitions.json#/parameters/subscriptionId"
+              "$ref": "../2015-10-31/definitions.json#/parameters/SubscriptionIdParameter"
             },
             {
-              "$ref": "./definitions.json#/parameters/resourceGroupName"
+                "$ref": "../2015-10-31/definitions.json#/parameters/ResourceGroupNameParameter"
             },
             {
               "$ref": "./definitions.json#/parameters/automationAccountName"
@@ -70,7 +70,7 @@
               "format": "uuid"
             },
             {
-              "$ref": "./definitions.json#/parameters/apiVersion"
+              "$ref": "../2015-10-31/definitions.json#/parameters/ApiVersionParameter"
             },
             {
               "$ref": "./definitions.json#/parameters/clientRequestId"
@@ -105,17 +105,17 @@
           "operationId": "SoftwareUpdateConfigurationMachineRuns_List",
           "parameters": [
             {
-              "$ref": "./definitions.json#/parameters/subscriptionId"
+              "$ref": "../2015-10-31/definitions.json#/parameters/SubscriptionIdParameter"
             },
             {
-              "$ref": "./definitions.json#/parameters/resourceGroupName"
+                "$ref": "../2015-10-31/definitions.json#/parameters/ResourceGroupNameParameter"
             },
             {
               "$ref": "./definitions.json#/parameters/automationAccountName"
             },
             {
-              "$ref": "./definitions.json#/parameters/apiVersion"
-            },
+              "$ref": "../2015-10-31/definitions.json#/parameters/ApiVersionParameter"
+          },
             {
               "$ref": "./definitions.json#/parameters/clientRequestId"
             },
