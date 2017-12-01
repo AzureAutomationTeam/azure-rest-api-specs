@@ -59,7 +59,7 @@
                     "readOnly": true
                 }
             },
-            "required": [ "updateConfiguration" ]
+            "required": [ "updateConfiguration", "scheduleInfo" ]
         },
 
         "softwareUpdateConfiguration": {
