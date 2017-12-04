@@ -118,6 +118,13 @@
               "$ref": "#/parameters/clientRequestId"
             },
             {
+              "name": "$filter",
+              "in": "query",
+              "required": false,
+              "type": "string",
+              "description": "The filter to apply on the operation. You can use the following filters: 'properties/osType', 'properties/status', 'properties/startTime', and 'properties/softwareUpdateConfiguration/name'"
+            },
+            {
               "name": "$skip",
               "in": "query",
               "required": false,
@@ -130,13 +137,6 @@
               "required": false,
               "type": "string",
               "description": "Maximum number of entries returned in the results collection"
-            },
-            {
-              "name": "$filter",
-              "in": "query",
-              "required": false,
-              "type": "string",
-              "description": "The filter to apply on the operation. You can use the following filters: 'properties/osType', 'properties/status', 'properties/startTime', and 'properties/softwareUpdateConfiguration/name'"
             }
           ],
           "responses": {
